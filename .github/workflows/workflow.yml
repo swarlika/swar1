@@ -4,12 +4,11 @@ on:
     branches:
       - main
 jobs:
-build:
+ build:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version:
-          - 15.x
+        node-version: [15.x]
     steps:
       - uses: actions/checkout@v1
       - run: npm install
